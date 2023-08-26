@@ -350,7 +350,7 @@ class RawEditorState extends EditorState
   List<ContextMenuButtonItem> get contextMenuButtonItems {
     return EditableText.getEditableButtonItems(
       clipboardStatus: _clipboardStatus.value,
-      onLiveTextInput: null,
+      // onLiveTextInput: null,
       onCopy: copyEnabled
           ? () => copySelection(SelectionChangedCause.toolbar)
           : null,
